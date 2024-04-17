@@ -13,6 +13,7 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(unique = true)
     private String studentCode;
     private String firstName;
     private String lastName;
